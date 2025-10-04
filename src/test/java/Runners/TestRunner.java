@@ -12,7 +12,8 @@ class TestRunner {
 
         Runner.path(
             "classpath:features/withLogin/Login.feature",
-            "classpath:features/withoutLogin/SkipLogin.feature"
+            "classpath:features/withoutLogin/SkipLogin.feature",
+            "classpath:features/AddDeletePlayers/AddDeletePlayers.feature"
         )
         .tags("Reg")
         .parallel(5);                            
