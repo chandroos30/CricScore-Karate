@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e5429711-23c4-46c9-8587-953d6b54d083",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.withLogin.Sample</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-10-03 12:44:07 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Fetch User Teams</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>Fetch User Players</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:23]"><span>[3:23]</span> <span>Create a Player</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:42]"><span>[4:42]</span> <span>Fetch Upcoming matches</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:52]"><span>[5:52]</span> <span>Fetch Completed matches</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:62]"><span>[6:62]</span> <span>Fetch Live matches</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/withLogin/Sample.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Scorecraze API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Fetch User Teams</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>664</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;team/cricket&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">551</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">12:44:06.587 request:
+1 &gt; GET https://dev.scorecraze.app/api/team/cricket
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:44:06.793 response time in milliseconds: 203
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2290
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;8f2-23VOEpQu/qf66nVUM7wJzXb+Eos&quot;
+{&quot;message&quot;:&quot;Cricket Teams retrieved successfully&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;689e013f4186572fdcb75bb7&quot;,&quot;teamName&quot;:&quot;Multan Sultans&quot;,&quot;teamDisplayName&quot;:&quot;MS&quot;,&quot;teamAPIId&quot;:1755185471222,&quot;teamLogo&quot;:&quot;&quot;,&quot;teamJersey&quot;:&quot;&quot;,&quot;teamPlayers&quot;:[1755185495238],&quot;seriesAPIId&quot;:0,&quot;seriesName&quot;:&quot;&quot;,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-10-01T07:58:05.417Z&quot;},{&quot;_id&quot;:&quot;68a2e6089f04af09b16428bf&quot;,&quot;teamName&quot;:&quot;Chennai Sharks&quot;,&quot;teamDisplayName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;teamLogo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;,&quot;teamJersey&quot;:&quot;&quot;,&quot;teamPlayers&quot;:[1755506303520,1755506339248,1755506400602,1755607009505],&quot;seriesAPIId&quot;:0,&quot;seriesName&quot;:&quot;&quot;,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-09-21T19:13:46.392Z&quot;},{&quot;_id&quot;:&quot;68a2e6139f04af09b16428c3&quot;,&quot;teamName&quot;:&quot;MI Legends&quot;,&quot;teamDisplayName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;teamLogo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;,&quot;teamJersey&quot;:&quot;&quot;,&quot;teamPlayers&quot;:[1755506321960,1755506373062,1755506282024,1755506356475],&quot;seriesAPIId&quot;:0,&quot;seriesName&quot;:&quot;&quot;,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46ffcdf63f97065478322&quot;,&quot;teamName&quot;:&quot;Team Anbu&quot;,&quot;teamDisplayName&quot;:&quot;TA&quot;,&quot;teamAPIId&quot;:1755607036402,&quot;teamLogo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;,&quot;teamJersey&quot;:&quot;&quot;,&quot;teamPlayers&quot;:[1755185495238,1755506400602,1755606930551,1755606962052,1755506303520,1755506356475,1755506373062],&quot;seriesAPIId&quot;:0,&quot;seriesName&quot;:&quot;&quot;,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a4700bdf63f97065478326&quot;,&quot;teamName&quot;:&quot;Team Gethu&quot;,&quot;teamDisplayName&quot;:&quot;TG&quot;,&quot;teamAPIId&quot;:1755607051158,&quot;teamLogo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;,&quot;teamJersey&quot;:&quot;&quot;,&quot;teamPlayers&quot;:[1755506339248,1755606894500,1755607009505,1755607010505,1755607184602,1755607171756,1755607158883],&quot;seriesAPIId&quot;:0,&quot;seriesName&quot;:&quot;&quot;,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a8268764f279a0f106fc8f&quot;,&quot;teamName&quot;:&quot;Anish Dream&quot;,&quot;teamDisplayName&quot;:&quot;AD&quot;,&quot;teamAPIId&quot;:1755850375926,&quot;teamLogo&quot;:&quot;&quot;,&quot;teamJersey&quot;:&quot;&quot;,&quot;teamPlayers&quot;:[],&quot;seriesAPIId&quot;:0,&quot;seriesName&quot;:&quot;&quot;,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-09-01T05:38:57.067Z&quot;}],&quot;totalPage&quot;:0,&quot;currentPage&quot;:1,&quot;totalCount&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">12:44:06.877 [print] {
+  &quot;message&quot;: &quot;Cricket Teams retrieved successfully&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;689e013f4186572fdcb75bb7&quot;,
+      &quot;teamName&quot;: &quot;Multan Sultans&quot;,
+      &quot;teamDisplayName&quot;: &quot;MS&quot;,
+      &quot;teamAPIId&quot;: 1755185471222,
+      &quot;teamLogo&quot;: &quot;&quot;,
+      &quot;teamJersey&quot;: &quot;&quot;,
+      &quot;teamPlayers&quot;: [
+        1755185495238
+      ],
+      &quot;seriesAPIId&quot;: 0,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-10-01T07:58:05.417Z&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a2e6089f04af09b16428bf&quot;,
+      &quot;teamName&quot;: &quot;Chennai Sharks&quot;,
+      &quot;teamDisplayName&quot;: &quot;CS&quot;,
+      &quot;teamAPIId&quot;: 1755506184214,
+      &quot;teamLogo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;,
+      &quot;teamJersey&quot;: &quot;&quot;,
+      &quot;teamPlayers&quot;: [
+        1755506303520,
+        1755506339248,
+        1755506400602,
+        1755607009505
+      ],
+      &quot;seriesAPIId&quot;: 0,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-09-21T19:13:46.392Z&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a2e6139f04af09b16428c3&quot;,
+      &quot;teamName&quot;: &quot;MI Legends&quot;,
+      &quot;teamDisplayName&quot;: &quot;ML&quot;,
+      &quot;teamAPIId&quot;: 1755506194965,
+      &quot;teamLogo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;,
+      &quot;teamJersey&quot;: &quot;&quot;,
+      &quot;teamPlayers&quot;: [
+        1755506321960,
+        1755506373062,
+        1755506282024,
+        1755506356475
+      ],
+      &quot;seriesAPIId&quot;: 0,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;68a46ffcdf63f97065478322&quot;,
+      &quot;teamName&quot;: &quot;Team Anbu&quot;,
+      &quot;teamDisplayName&quot;: &quot;TA&quot;,
+      &quot;teamAPIId&quot;: 1755607036402,
+      &quot;teamLogo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;,
+      &quot;teamJersey&quot;: &quot;&quot;,
+      &quot;teamPlayers&quot;: [
+        1755185495238,
+        1755506400602,
+        1755606930551,
+        1755606962052,
+        1755506303520,
+        1755506356475,
+        1755506373062
+      ],
+      &quot;seriesAPIId&quot;: 0,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;68a4700bdf63f97065478326&quot;,
+      &quot;teamName&quot;: &quot;Team Gethu&quot;,
+      &quot;teamDisplayName&quot;: &quot;TG&quot;,
+      &quot;teamAPIId&quot;: 1755607051158,
+      &quot;teamLogo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;,
+      &quot;teamJersey&quot;: &quot;&quot;,
+      &quot;teamPlayers&quot;: [
+        1755506339248,
+        1755606894500,
+        1755607009505,
+        1755607010505,
+        1755607184602,
+        1755607171756,
+        1755607158883
+      ],
+      &quot;seriesAPIId&quot;: 0,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;68a8268764f279a0f106fc8f&quot;,
+      &quot;teamName&quot;: &quot;Anish Dream&quot;,
+      &quot;teamDisplayName&quot;: &quot;AD&quot;,
+      &quot;teamAPIId&quot;: 1755850375926,
+      &quot;teamLogo&quot;: &quot;&quot;,
+      &quot;teamJersey&quot;: &quot;&quot;,
+      &quot;teamPlayers&quot;: [
+      ],
+      &quot;seriesAPIId&quot;: 0,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-09-01T05:38:57.067Z&quot;
+    }
+  ],
+  &quot;totalPage&quot;: 0,
+  &quot;currentPage&quot;: 1,
+  &quot;totalCount&quot;: 0
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:44:06.882 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">Fetch User Players</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>97</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;team/cricket/players&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">93</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">12:44:06.893 request:
+1 &gt; GET https://dev.scorecraze.app/api/team/cricket/players
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:44:06.983 response time in milliseconds: 87
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 3559
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;de7-eHUSiPLQQuUFknPEUZF8dCQqyro&quot;
+{&quot;data&quot;:[{&quot;_id&quot;:&quot;68a47090df63f97065478346&quot;,&quot;playerName&quot;:&quot;Tamilarasan&quot;,&quot;playerDisplayName&quot;:&quot;Tamil&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerAPIId&quot;:1755607184602,&quot;mobileNumber&quot;:&quot;9404640485&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607709392-1755607184602&quot;},{&quot;_id&quot;:&quot;68a47083df63f97065478342&quot;,&quot;playerName&quot;:&quot;Karthik Dhoni&quot;,&quot;playerDisplayName&quot;:&quot;KD&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;wk&quot;,&quot;playerAPIId&quot;:1755607171756,&quot;mobileNumber&quot;:&quot;9404438105&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755608066364-1755607171756&quot;},{&quot;_id&quot;:&quot;68a47076df63f9706547833e&quot;,&quot;playerName&quot;:&quot;Vignesh Gethu&quot;,&quot;playerDisplayName&quot;:&quot;Vicky&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bat&quot;,&quot;playerAPIId&quot;:1755607158883,&quot;mobileNumber&quot;:&quot;9543138205&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607749324-1755607158883&quot;},{&quot;_id&quot;:&quot;68a46fe1df63f9706547831c&quot;,&quot;playerName&quot;:&quot;Sudharsanan&quot;,&quot;playerDisplayName&quot;:&quot;Sn&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607766883-1755607010505&quot;,&quot;playerAPIId&quot;:1755607010505,&quot;mobileNumber&quot;:&quot;9054355088&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46fe1df63f9706547831b&quot;,&quot;playerName&quot;:&quot;Harish&quot;,&quot;playerDisplayName&quot;:&quot;Hh&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607789469-1755607009505&quot;,&quot;playerAPIId&quot;:1755607009505,&quot;mobileNumber&quot;:&quot;9055880085&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46fb2df63f97065478316&quot;,&quot;playerName&quot;:&quot;Seran Baskaran&quot;,&quot;playerDisplayName&quot;:&quot;Seran&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerAPIId&quot;:1755606962052,&quot;mobileNumber&quot;:&quot;9351040454&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607890039-1755606962052&quot;},{&quot;_id&quot;:&quot;68a46f92df63f97065478311&quot;,&quot;playerName&quot;:&quot;Vinoth Kanna&quot;,&quot;playerDisplayName&quot;:&quot;VK&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerAPIId&quot;:1755606930551,&quot;mobileNumber&quot;:&quot;9015124040&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607801627-1755606930551&quot;},{&quot;_id&quot;:&quot;68a46f6edf63f9706547830d&quot;,&quot;playerName&quot;:&quot;Anwin Paulji&quot;,&quot;playerDisplayName&quot;:&quot;Anwin&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerAPIId&quot;:1755606894500,&quot;mobileNumber&quot;:&quot;9075453148&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607827941-1755606894500&quot;},{&quot;_id&quot;:&quot;68a2e6e09f04af09b16428e0&quot;,&quot;playerName&quot;:&quot;Bharathi&quot;,&quot;playerDisplayName&quot;:&quot;Bharathi&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607843778-1755506400602&quot;,&quot;playerAPIId&quot;:1755506400602,&quot;mobileNumber&quot;:&quot;8697548123&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a2e6c59f04af09b16428dc&quot;,&quot;playerName&quot;:&quot;Logesh&quot;,&quot;playerDisplayName&quot;:&quot;Logi&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607904697-1755506373062&quot;,&quot;playerAPIId&quot;:1755506373062,&quot;mobileNumber&quot;:&quot;9467853120&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0}],&quot;status&quot;:200,&quot;message&quot;:&quot;Players fetched successfully&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">12:44:06.986 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;68a47090df63f97065478346&quot;,
+      &quot;playerName&quot;: &quot;Tamilarasan&quot;,
+      &quot;playerDisplayName&quot;: &quot;Tamil&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;bowl&quot;,
+      &quot;playerAPIId&quot;: 1755607184602,
+      &quot;mobileNumber&quot;: &quot;9404640485&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607709392-1755607184602&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a47083df63f97065478342&quot;,
+      &quot;playerName&quot;: &quot;Karthik Dhoni&quot;,
+      &quot;playerDisplayName&quot;: &quot;KD&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;wk&quot;,
+      &quot;playerAPIId&quot;: 1755607171756,
+      &quot;mobileNumber&quot;: &quot;9404438105&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755608066364-1755607171756&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a47076df63f9706547833e&quot;,
+      &quot;playerName&quot;: &quot;Vignesh Gethu&quot;,
+      &quot;playerDisplayName&quot;: &quot;Vicky&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;bat&quot;,
+      &quot;playerAPIId&quot;: 1755607158883,
+      &quot;mobileNumber&quot;: &quot;9543138205&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607749324-1755607158883&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a46fe1df63f9706547831c&quot;,
+      &quot;playerName&quot;: &quot;Sudharsanan&quot;,
+      &quot;playerDisplayName&quot;: &quot;Sn&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;bowl&quot;,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607766883-1755607010505&quot;,
+      &quot;playerAPIId&quot;: 1755607010505,
+      &quot;mobileNumber&quot;: &quot;9054355088&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;68a46fe1df63f9706547831b&quot;,
+      &quot;playerName&quot;: &quot;Harish&quot;,
+      &quot;playerDisplayName&quot;: &quot;Hh&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;ar&quot;,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607789469-1755607009505&quot;,
+      &quot;playerAPIId&quot;: 1755607009505,
+      &quot;mobileNumber&quot;: &quot;9055880085&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;68a46fb2df63f97065478316&quot;,
+      &quot;playerName&quot;: &quot;Seran Baskaran&quot;,
+      &quot;playerDisplayName&quot;: &quot;Seran&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;bowl&quot;,
+      &quot;playerAPIId&quot;: 1755606962052,
+      &quot;mobileNumber&quot;: &quot;9351040454&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607890039-1755606962052&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a46f92df63f97065478311&quot;,
+      &quot;playerName&quot;: &quot;Vinoth Kanna&quot;,
+      &quot;playerDisplayName&quot;: &quot;VK&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;ar&quot;,
+      &quot;playerAPIId&quot;: 1755606930551,
+      &quot;mobileNumber&quot;: &quot;9015124040&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607801627-1755606930551&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a46f6edf63f9706547830d&quot;,
+      &quot;playerName&quot;: &quot;Anwin Paulji&quot;,
+      &quot;playerDisplayName&quot;: &quot;Anwin&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;ar&quot;,
+      &quot;playerAPIId&quot;: 1755606894500,
+      &quot;mobileNumber&quot;: &quot;9075453148&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607827941-1755606894500&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68a2e6e09f04af09b16428e0&quot;,
+      &quot;playerName&quot;: &quot;Bharathi&quot;,
+      &quot;playerDisplayName&quot;: &quot;Bharathi&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;bowl&quot;,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607843778-1755506400602&quot;,
+      &quot;playerAPIId&quot;: 1755506400602,
+      &quot;mobileNumber&quot;: &quot;8697548123&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;68a2e6c59f04af09b16428dc&quot;,
+      &quot;playerName&quot;: &quot;Logesh&quot;,
+      &quot;playerDisplayName&quot;: &quot;Logi&quot;,
+      &quot;player_value&quot;: &quot;0&quot;,
+      &quot;player_type&quot;: &quot;ar&quot;,
+      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607904697-1755506373062&quot;,
+      &quot;playerAPIId&quot;: 1755506373062,
+      &quot;mobileNumber&quot;: &quot;9467853120&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0
+    }
+  ],
+  &quot;status&quot;: 200,
+  &quot;message&quot;: &quot;Players fetched successfully&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">12:44:06.988 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:23]</span>
+                <span class="scenario-name">Create a Player</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>176</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.24">{
+  &quot;playerImg&quot;: &quot;&quot;,
+  &quot;playerName&quot;: &quot;Dummy&quot;,
+  &quot;playerDisplayName&quot;: &quot;Dum&quot;,
+  &quot;player_value&quot;: &quot;0&quot;,
+  &quot;mobileNumber&quot;: &quot;9174963102&quot;,
+  &quot;player_type&quot;: &quot;wk&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;team/cricket/addplayer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">147</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">12:44:07.075 request:
+1 &gt; POST https://dev.scorecraze.app/api/team/cricket/addplayer
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 129
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;playerImg&quot;:&quot;&quot;,&quot;playerName&quot;:&quot;Dummy&quot;,&quot;playerDisplayName&quot;:&quot;Dum&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;mobileNumber&quot;:&quot;9174963102&quot;,&quot;player_type&quot;:&quot;wk&quot;}
+
+12:44:07.169 response time in milliseconds: 93
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 60
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;3c-5ceYLomTmqPBWCBhENeDjwoPIhg&quot;
+{&quot;status&quot;:200,&quot;message&quot;:&quot;Team Player Uploaded Successfully&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">12:44:07.174 [print] {
+  &quot;status&quot;: 200,
+  &quot;message&quot;: &quot;Team Player Uploaded Successfully&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:42]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tag1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:42]</span>
+                <span class="scenario-name">Fetch Upcoming matches</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>103</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:42]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requestData.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set requestBody.filter.fixtureStatus = &quot;Upcoming&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">90</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">12:44:07.197 request:
+1 &gt; POST https://dev.scorecraze.app/api/fixture/cricket
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 55
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Upcoming&quot;}}
+
+12:44:07.284 response time in milliseconds: 86
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1005
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;3ed-or42J1iOwCRgI2XBO1zjFXPR4Ds&quot;
+{&quot;message&quot;:&quot;Fixtures Listed successfully&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;68c140dd7e0ef53ac006521e&quot;,&quot;fixtureName&quot;:&quot;Team Anbu vs Team Gethu&quot;,&quot;fixtureAPIId&quot;:1757495517508,&quot;fixtureDisplayName&quot;:&quot;TA vs TG&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-10T12:00:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Upcoming&quot;,&quot;fixtureStatusType&quot;:1,&quot;fixtureVenue&quot;:&quot;Karappakkam&quot;,&quot;fixtureType&quot;:&quot;T20&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Team Anbu&quot;,&quot;shortName&quot;:&quot;TA&quot;,&quot;teamAPIId&quot;:1755607036402,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Team Gethu&quot;,&quot;shortName&quot;:&quot;TG&quot;,&quot;teamAPIId&quot;:1755607051158,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;}},&quot;lineupsOut&quot;:false,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:false,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-09-10T09:11:57.513Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-10T09:11:57.513Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;&quot;}],&quot;totalPage&quot;:1,&quot;currentPage&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">12:44:07.287 [print] {
+  &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;68c140dd7e0ef53ac006521e&quot;,
+      &quot;fixtureName&quot;: &quot;Team Anbu vs Team Gethu&quot;,
+      &quot;fixtureAPIId&quot;: 1757495517508,
+      &quot;fixtureDisplayName&quot;: &quot;TA vs TG&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-10T12:00:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Upcoming&quot;,
+      &quot;fixtureStatusType&quot;: 1,
+      &quot;fixtureVenue&quot;: &quot;Karappakkam&quot;,
+      &quot;fixtureType&quot;: &quot;T20&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Team Anbu&quot;,
+          &quot;shortName&quot;: &quot;TA&quot;,
+          &quot;teamAPIId&quot;: 1755607036402,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Team Gethu&quot;,
+          &quot;shortName&quot;: &quot;TG&quot;,
+          &quot;teamAPIId&quot;: 1755607051158,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: false,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: false,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-09-10T09:11:57.513Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-10T09:11:57.513Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;&quot;
+    }
+  ],
+  &quot;totalPage&quot;: 1,
+  &quot;currentPage&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:52]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tag1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:52]</span>
+                <span class="scenario-name">Fetch Completed matches</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>110</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:52]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requestData.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set requestBody.filter.fixtureStatus = &quot;Completed&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">103</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.57">12:44:07.299 request:
+1 &gt; POST https://dev.scorecraze.app/api/fixture/cricket
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Completed&quot;}}
+
+12:44:07.397 response time in milliseconds: 97
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 9174
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;23d6-dLi5ooi7FUiJvghIaNw/aNXB8H8&quot;
+{&quot;message&quot;:&quot;Fixtures Listed successfully&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;68b15391593666342dd101c8&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756451729991,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-30T09:15:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;Chennai &quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-08-29T09:27:29.653Z&quot;,&quot;summary&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;68b15391593666342dd101b5&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756451729400,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-13T07:25:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;Arena&quot;,&quot;fixtureType&quot;:&quot;T10&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-09-02T13:31:34.538Z&quot;,&quot;summary&quot;:&quot;CS won by 11 runs&quot;},{&quot;_id&quot;:&quot;68b93afefe9b55740eedff5e&quot;,&quot;fixtureName&quot;:&quot;Team Anbu vs Team Gethu&quot;,&quot;fixtureAPIId&quot;:1756969726043,&quot;fixtureDisplayName&quot;:&quot;TA vs TG&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-04T07:11:33.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;Jodhpur&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Team Anbu&quot;,&quot;shortName&quot;:&quot;TA&quot;,&quot;teamAPIId&quot;:1755607036402,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Team Gethu&quot;,&quot;shortName&quot;:&quot;TG&quot;,&quot;teamAPIId&quot;:1755607051158,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-09-04T07:08:46.053Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-04T11:44:58.067Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;TG won by 3 wickets&quot;},{&quot;_id&quot;:&quot;68b7dbca322dac15a0989f57&quot;,&quot;fixtureName&quot;:&quot;Team Anbu vs Team Gethu&quot;,&quot;fixtureAPIId&quot;:1756879818214,&quot;fixtureDisplayName&quot;:&quot;TA vs TG&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-03T06:15:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;Dubai&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Team Anbu&quot;,&quot;shortName&quot;:&quot;TA&quot;,&quot;teamAPIId&quot;:1755607036402,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Team Gethu&quot;,&quot;shortName&quot;:&quot;TG&quot;,&quot;teamAPIId&quot;:1755607051158,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-09-03T06:10:18.218Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-03T10:37:22.614Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;TG won by 3 wickets&quot;},{&quot;_id&quot;:&quot;68b680c9322dac15a0986022&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756790985168,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-02T05:30:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;Karapakkam&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-09-02T05:29:45.172Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-02T05:46:38.803Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;ML won by 3 wickets&quot;},{&quot;_id&quot;:&quot;68b59db4322dac15a0984be7&quot;,&quot;fixtureName&quot;:&quot;Team Anbu vs Team Gethu&quot;,&quot;fixtureAPIId&quot;:1756732852339,&quot;fixtureDisplayName&quot;:&quot;TA vs TG&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-01T13:25:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;Chennai&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Team Anbu&quot;,&quot;shortName&quot;:&quot;TA&quot;,&quot;teamAPIId&quot;:1755607036402,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Team Gethu&quot;,&quot;shortName&quot;:&quot;TG&quot;,&quot;teamAPIId&quot;:1755607051158,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-09-01T13:20:52.350Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-01T13:31:48.127Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;TG won by 3 wickets&quot;},{&quot;_id&quot;:&quot;68b1470c1f1848b1e1c39fb9&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756448524072,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-29T18:30:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;gunidy&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;CS won by 3 wickets&quot;},{&quot;_id&quot;:&quot;68b16a8e62a5a290f8b8a29f&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756457614371,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-29T18:30:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;fgfg&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-08-29T08:53:34.384Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-05T07:20:17.122Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;ML won by 0 wickets&quot;},{&quot;_id&quot;:&quot;68b132e2593666342dd0f44c&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756443362502,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-29T18:30:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;pl&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;68b141d1593666342dd0f978&quot;,&quot;fixtureName&quot;:&quot;Chennai Sharks vs MI Legends&quot;,&quot;fixtureAPIId&quot;:1756447185095,&quot;fixtureDisplayName&quot;:&quot;CS vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-29T17:59:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Completed&quot;,&quot;fixtureStatusType&quot;:3,&quot;fixtureVenue&quot;:&quot;guk&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Chennai Sharks&quot;,&quot;shortName&quot;:&quot;CS&quot;,&quot;teamAPIId&quot;:1755506184214,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;MI Legends&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755506194965,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;&quot;}],&quot;totalPage&quot;:3,&quot;currentPage&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">12:44:07.403 [print] {
+  &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;68b15391593666342dd101c8&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756451729991,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-30T09:15:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;Chennai &quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-08-29T09:27:29.653Z&quot;,
+      &quot;summary&quot;: &quot;&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b15391593666342dd101b5&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756451729400,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-13T07:25:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;Arena&quot;,
+      &quot;fixtureType&quot;: &quot;T10&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-09-02T13:31:34.538Z&quot;,
+      &quot;summary&quot;: &quot;CS won by 11 runs&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b93afefe9b55740eedff5e&quot;,
+      &quot;fixtureName&quot;: &quot;Team Anbu vs Team Gethu&quot;,
+      &quot;fixtureAPIId&quot;: 1756969726043,
+      &quot;fixtureDisplayName&quot;: &quot;TA vs TG&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-04T07:11:33.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;Jodhpur&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Team Anbu&quot;,
+          &quot;shortName&quot;: &quot;TA&quot;,
+          &quot;teamAPIId&quot;: 1755607036402,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Team Gethu&quot;,
+          &quot;shortName&quot;: &quot;TG&quot;,
+          &quot;teamAPIId&quot;: 1755607051158,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-09-04T07:08:46.053Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-04T11:44:58.067Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;TG won by 3 wickets&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b7dbca322dac15a0989f57&quot;,
+      &quot;fixtureName&quot;: &quot;Team Anbu vs Team Gethu&quot;,
+      &quot;fixtureAPIId&quot;: 1756879818214,
+      &quot;fixtureDisplayName&quot;: &quot;TA vs TG&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-03T06:15:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;Dubai&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Team Anbu&quot;,
+          &quot;shortName&quot;: &quot;TA&quot;,
+          &quot;teamAPIId&quot;: 1755607036402,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Team Gethu&quot;,
+          &quot;shortName&quot;: &quot;TG&quot;,
+          &quot;teamAPIId&quot;: 1755607051158,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-09-03T06:10:18.218Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-03T10:37:22.614Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;TG won by 3 wickets&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b680c9322dac15a0986022&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756790985168,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-02T05:30:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;Karapakkam&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-09-02T05:29:45.172Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-02T05:46:38.803Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;ML won by 3 wickets&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b59db4322dac15a0984be7&quot;,
+      &quot;fixtureName&quot;: &quot;Team Anbu vs Team Gethu&quot;,
+      &quot;fixtureAPIId&quot;: 1756732852339,
+      &quot;fixtureDisplayName&quot;: &quot;TA vs TG&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-01T13:25:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;Chennai&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Team Anbu&quot;,
+          &quot;shortName&quot;: &quot;TA&quot;,
+          &quot;teamAPIId&quot;: 1755607036402,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Team Gethu&quot;,
+          &quot;shortName&quot;: &quot;TG&quot;,
+          &quot;teamAPIId&quot;: 1755607051158,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-09-01T13:20:52.350Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-01T13:31:48.127Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;TG won by 3 wickets&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b1470c1f1848b1e1c39fb9&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756448524072,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-29T18:30:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;gunidy&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;CS won by 3 wickets&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b16a8e62a5a290f8b8a29f&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756457614371,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-29T18:30:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;fgfg&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-08-29T08:53:34.384Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-05T07:20:17.122Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;ML won by 0 wickets&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b132e2593666342dd0f44c&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756443362502,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-29T18:30:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;pl&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;68b141d1593666342dd0f978&quot;,
+      &quot;fixtureName&quot;: &quot;Chennai Sharks vs MI Legends&quot;,
+      &quot;fixtureAPIId&quot;: 1756447185095,
+      &quot;fixtureDisplayName&quot;: &quot;CS vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-29T17:59:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Completed&quot;,
+      &quot;fixtureStatusType&quot;: 3,
+      &quot;fixtureVenue&quot;: &quot;guk&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Chennai Sharks&quot;,
+          &quot;shortName&quot;: &quot;CS&quot;,
+          &quot;teamAPIId&quot;: 1755506184214,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506184214-1755506184214&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;MI Legends&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755506194965,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755506194965-1755506194965&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;&quot;
+    }
+  ],
+  &quot;totalPage&quot;: 3,
+  &quot;currentPage&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:62]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tag1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:62]</span>
+                <span class="scenario-name">Fetch Live matches</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>87</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:62]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requestData.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">84</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">12:44:07.411 request:
+1 &gt; POST https://dev.scorecraze.app/api/fixture/cricket
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Live&quot;}}
+
+12:44:07.493 response time in milliseconds: 80
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1031
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;407-0HoLVDmaIn35sPiXO5Nii5Njjng&quot;
+{&quot;message&quot;:&quot;Fixtures Listed successfully&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;68ba986903172702146f0ed1&quot;,&quot;fixtureName&quot;:&quot;Team Anbu vs Team Gethu&quot;,&quot;fixtureAPIId&quot;:1757059177908,&quot;fixtureDisplayName&quot;:&quot;TA vs TG&quot;,&quot;fixtureStartDate&quot;:&quot;2025-09-05T08:00:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Live&quot;,&quot;fixtureStatusType&quot;:2,&quot;fixtureVenue&quot;:&quot;Chennai&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Team Anbu&quot;,&quot;shortName&quot;:&quot;TA&quot;,&quot;teamAPIId&quot;:1755607036402,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Team Gethu&quot;,&quot;shortName&quot;:&quot;TG&quot;,&quot;teamAPIId&quot;:1755607051158,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-09-05T07:59:37.941Z&quot;,&quot;updatedAt&quot;:&quot;2025-09-05T08:52:56.353Z&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;TA won the toss and choose to bat&quot;}],&quot;totalPage&quot;:1,&quot;currentPage&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">12:44:07.496 [print] {
+  &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;68ba986903172702146f0ed1&quot;,
+      &quot;fixtureName&quot;: &quot;Team Anbu vs Team Gethu&quot;,
+      &quot;fixtureAPIId&quot;: 1757059177908,
+      &quot;fixtureDisplayName&quot;: &quot;TA vs TG&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-09-05T08:00:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Live&quot;,
+      &quot;fixtureStatusType&quot;: 2,
+      &quot;fixtureVenue&quot;: &quot;Chennai&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Team Anbu&quot;,
+          &quot;shortName&quot;: &quot;TA&quot;,
+          &quot;teamAPIId&quot;: 1755607036402,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607286750-1755607036402&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Team Gethu&quot;,
+          &quot;shortName&quot;: &quot;TG&quot;,
+          &quot;teamAPIId&quot;: 1755607051158,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607294078-1755607051158&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-09-05T07:59:37.941Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-09-05T08:52:56.353Z&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;TA won the toss and choose to bat&quot;
+    }
+  ],
+  &quot;totalPage&quot;: 1,
+  &quot;currentPage&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

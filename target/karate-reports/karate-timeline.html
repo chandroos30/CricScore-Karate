@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/withLogin\/Sample[1:9]","start":1759475646205,"end":1759475646881,"title":"features\/withLogin\/Sample[1:9] 12:44:06.205-12:44:06.881 Fetch User Teams"},{"id":2,"group":1,"content":"features\/withLogin\/Sample[2:16]","start":1759475646891,"end":1759475646987,"title":"features\/withLogin\/Sample[2:16] 12:44:06.891-12:44:06.987 Fetch User Players"},{"id":3,"group":1,"content":"features\/withLogin\/Sample[3:23]","start":1759475646996,"end":1759475647173,"title":"features\/withLogin\/Sample[3:23] 12:44:06.996-12:44:07.173 Create a Player"},{"id":4,"group":1,"content":"features\/withLogin\/Sample[4:42]","start":1759475647183,"end":1759475647286,"title":"features\/withLogin\/Sample[4:42] 12:44:07.183-12:44:07.286 Fetch Upcoming matches"},{"id":5,"group":1,"content":"features\/withLogin\/Sample[5:52]","start":1759475647293,"end":1759475647402,"title":"features\/withLogin\/Sample[5:52] 12:44:07.293-12:44:07.402 Fetch Completed matches"},{"id":6,"group":1,"content":"features\/withLogin\/Sample[6:62]","start":1759475647408,"end":1759475647495,"title":"features\/withLogin\/Sample[6:62] 12:44:07.408-12:44:07.495 Fetch Live matches"},{"id":7,"group":1,"content":"features\/withoutLogin\/SkipLogin[1:4]","start":1759475648095,"end":1759475648186,"title":"features\/withoutLogin\/SkipLogin[1:4] 12:44:08.095-12:44:08.186 Fetch All Live matches without login"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e5429711-23c4-46c9-8587-953d6b54d083",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.withoutLogin.SkipLogin</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-10-03 12:44:08 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Fetch All Live matches without login</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/withoutLogin/SkipLogin.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">To fetch All matches &amp; Tournaments without Login</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">tag2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Fetch All Live matches without login</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>92</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;classpath:payloads/withoutLogin.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/cricket/fixtures&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 6</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">86</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">12:44:08.104 request:
+1 &gt; POST https://dev.scorecraze.app/cricket/fixtures?page=6
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Live&quot;}}
+
+12:44:08.185 response time in milliseconds: 81
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Fri, 03 Oct 2025 07:14:11 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2608
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;a30-UHv6W107xzBNUfRdfJGEJfWHkmg&quot;
+{&quot;message&quot;:&quot;Fixtures Listed successfully&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;68a42727df63f97065477bf9&quot;,&quot;fixtureName&quot;:&quot;LCU vs Marvel&quot;,&quot;fixtureAPIId&quot;:1755588391718,&quot;fixtureDisplayName&quot;:&quot;LCD vs ML&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-19T08:26:22.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Live&quot;,&quot;fixtureStatusType&quot;:2,&quot;fixtureVenue&quot;:&quot;Pondicherry&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;LCU&quot;,&quot;shortName&quot;:&quot;LCD&quot;,&quot;teamAPIId&quot;:1755180914595,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755180914595-1755180914595&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Marvel&quot;,&quot;shortName&quot;:&quot;ML&quot;,&quot;teamAPIId&quot;:1755180942974,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755180942974-1755180942974&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;689319ded6349d73f8ae2e93&quot;,&quot;__v&quot;:0,&quot;summary&quot;:&quot;ML won the toss and choose to bowl&quot;},{&quot;_id&quot;:&quot;689ee02c7fe9653b333ef18d&quot;,&quot;fixtureName&quot;:&quot;Sciflare Sharks vs Adengappa&quot;,&quot;fixtureAPIId&quot;:1755242540621,&quot;fixtureDisplayName&quot;:&quot;Shark vs 8Peru&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-15T07:25:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Live&quot;,&quot;fixtureStatusType&quot;:2,&quot;fixtureVenue&quot;:&quot;Arena&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;Sciflare Sharks&quot;,&quot;shortName&quot;:&quot;Shark&quot;,&quot;teamAPIId&quot;:1755175168751,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755175168751-1755175168751&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Adengappa&quot;,&quot;shortName&quot;:&quot;8Peru&quot;,&quot;teamAPIId&quot;:1755175182342,&quot;logo&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755175182342-1755175182342&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;688379f60b12077007261044&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-09-15T13:02:44.335Z&quot;,&quot;summary&quot;:&quot;Shark won the toss and choose to bat&quot;},{&quot;_id&quot;:&quot;689ed5a54186572fdcb75cf0&quot;,&quot;fixtureName&quot;:&quot;India vs Australia&quot;,&quot;fixtureAPIId&quot;:1755239845681,&quot;fixtureDisplayName&quot;:&quot;Ind vs AUS&quot;,&quot;fixtureStartDate&quot;:&quot;2025-08-15T06:38:00.000Z&quot;,&quot;fixtureStatus&quot;:&quot;Live&quot;,&quot;fixtureStatusType&quot;:2,&quot;fixtureVenue&quot;:&quot;Chr6&quot;,&quot;fixtureType&quot;:&quot;OTHERS&quot;,&quot;seriesName&quot;:&quot;&quot;,&quot;seriesShortName&quot;:&quot;&quot;,&quot;seriesAPIId&quot;:0,&quot;fixtureTeams&quot;:{&quot;teamA&quot;:{&quot;name&quot;:&quot;India&quot;,&quot;shortName&quot;:&quot;Ind&quot;,&quot;teamAPIId&quot;:1755239728500,&quot;logo&quot;:&quot;&quot;},&quot;teamB&quot;:{&quot;name&quot;:&quot;Australia&quot;,&quot;shortName&quot;:&quot;AUS&quot;,&quot;teamAPIId&quot;:1755239740170,&quot;logo&quot;:&quot;&quot;}},&quot;lineupsOut&quot;:true,&quot;enabledStatus&quot;:true,&quot;isactive&quot;:true,&quot;joinedUsers&quot;:[],&quot;toss&quot;:true,&quot;isLocal&quot;:true,&quot;createdBy&quot;:&quot;6891a17ed78c2da4a432f6b7&quot;,&quot;__v&quot;:0,&quot;updatedAt&quot;:&quot;2025-09-08T06:42:40.696Z&quot;,&quot;summary&quot;:&quot;Ind won the toss and choose to bowl&quot;}],&quot;totalPage&quot;:6,&quot;currentPage&quot;:6}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">12:44:08.187 [print] {
+  &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;68a42727df63f97065477bf9&quot;,
+      &quot;fixtureName&quot;: &quot;LCU vs Marvel&quot;,
+      &quot;fixtureAPIId&quot;: 1755588391718,
+      &quot;fixtureDisplayName&quot;: &quot;LCD vs ML&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-19T08:26:22.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Live&quot;,
+      &quot;fixtureStatusType&quot;: 2,
+      &quot;fixtureVenue&quot;: &quot;Pondicherry&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;LCU&quot;,
+          &quot;shortName&quot;: &quot;LCD&quot;,
+          &quot;teamAPIId&quot;: 1755180914595,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755180914595-1755180914595&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Marvel&quot;,
+          &quot;shortName&quot;: &quot;ML&quot;,
+          &quot;teamAPIId&quot;: 1755180942974,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755180942974-1755180942974&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;689319ded6349d73f8ae2e93&quot;,
+      &quot;__v&quot;: 0,
+      &quot;summary&quot;: &quot;ML won the toss and choose to bowl&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;689ee02c7fe9653b333ef18d&quot;,
+      &quot;fixtureName&quot;: &quot;Sciflare Sharks vs Adengappa&quot;,
+      &quot;fixtureAPIId&quot;: 1755242540621,
+      &quot;fixtureDisplayName&quot;: &quot;Shark vs 8Peru&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-15T07:25:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Live&quot;,
+      &quot;fixtureStatusType&quot;: 2,
+      &quot;fixtureVenue&quot;: &quot;Arena&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;Sciflare Sharks&quot;,
+          &quot;shortName&quot;: &quot;Shark&quot;,
+          &quot;teamAPIId&quot;: 1755175168751,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755175168751-1755175168751&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Adengappa&quot;,
+          &quot;shortName&quot;: &quot;8Peru&quot;,
+          &quot;teamAPIId&quot;: 1755175182342,
+          &quot;logo&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755175182342-1755175182342&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;688379f60b12077007261044&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-09-15T13:02:44.335Z&quot;,
+      &quot;summary&quot;: &quot;Shark won the toss and choose to bat&quot;
+    },
+    {
+      &quot;_id&quot;: &quot;689ed5a54186572fdcb75cf0&quot;,
+      &quot;fixtureName&quot;: &quot;India vs Australia&quot;,
+      &quot;fixtureAPIId&quot;: 1755239845681,
+      &quot;fixtureDisplayName&quot;: &quot;Ind vs AUS&quot;,
+      &quot;fixtureStartDate&quot;: &quot;2025-08-15T06:38:00.000Z&quot;,
+      &quot;fixtureStatus&quot;: &quot;Live&quot;,
+      &quot;fixtureStatusType&quot;: 2,
+      &quot;fixtureVenue&quot;: &quot;Chr6&quot;,
+      &quot;fixtureType&quot;: &quot;OTHERS&quot;,
+      &quot;seriesName&quot;: &quot;&quot;,
+      &quot;seriesShortName&quot;: &quot;&quot;,
+      &quot;seriesAPIId&quot;: 0,
+      &quot;fixtureTeams&quot;: {
+        &quot;teamA&quot;: {
+          &quot;name&quot;: &quot;India&quot;,
+          &quot;shortName&quot;: &quot;Ind&quot;,
+          &quot;teamAPIId&quot;: 1755239728500,
+          &quot;logo&quot;: &quot;&quot;
+        },
+        &quot;teamB&quot;: {
+          &quot;name&quot;: &quot;Australia&quot;,
+          &quot;shortName&quot;: &quot;AUS&quot;,
+          &quot;teamAPIId&quot;: 1755239740170,
+          &quot;logo&quot;: &quot;&quot;
+        }
+      },
+      &quot;lineupsOut&quot;: true,
+      &quot;enabledStatus&quot;: true,
+      &quot;isactive&quot;: true,
+      &quot;joinedUsers&quot;: [
+      ],
+      &quot;toss&quot;: true,
+      &quot;isLocal&quot;: true,
+      &quot;createdBy&quot;: &quot;6891a17ed78c2da4a432f6b7&quot;,
+      &quot;__v&quot;: 0,
+      &quot;updatedAt&quot;: &quot;2025-09-08T06:42:40.696Z&quot;,
+      &quot;summary&quot;: &quot;Ind won the toss and choose to bowl&quot;
+    }
+  ],
+  &quot;totalPage&quot;: 6,
+  &quot;currentPage&quot;: 6
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
