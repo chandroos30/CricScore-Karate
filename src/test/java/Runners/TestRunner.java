@@ -6,18 +6,18 @@ import com.intuit.karate.Runner;
 
 class TestRunner {
 
-    @Test
-    void runAllRegressionTests() {
-        System.out.println("Running features in parallel. Reports will be generated in target/karate-reports");
+	@Test
+	void runAllRegressionTests() {
+		System.out.println("Running features in parallel. Reports will be generated in target/karate-reports");
 
-        Runner.path(
-            "classpath:features/withLogin/Login.feature",
-            "classpath:features/withoutLogin/SkipLogin.feature",
-            "classpath:features/AddDeletePlayers/AddDeletePlayers.feature"
-        )
-        .tags("Reg")
-        .parallel(5);                            
+		Runner.path(
+				"classpath:features/withLogin/Login.feature", 
+				"classpath:features/withoutLogin/SkipLogin.feature",
+				"classpath:features/AddDeletePlayers/AddDeletePlayers.feature",
+				"classpath:features/EditTeamName/EditTeamName.feature")
+		.tags("Reg")
+		.parallel(5);
 
-        System.out.println("Execution finished. Check target/karate-reports/karate-summary.html");
-    }
+		System.out.println("Execution finished. Check target/karate-reports/karate-summary.html");
+	}
 }
