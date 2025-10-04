@@ -6,6 +6,7 @@ Feature: Scorecraze API
     * header Authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII'
     * header Content-Type = 'application/json'
 
+@Reg
   Scenario: Fetch User Teams
     Given path 'team/cricket'
     When method GET
@@ -13,12 +14,13 @@ Feature: Scorecraze API
     Then print response
     And print responseStatus
 
+@Reg
   Scenario: Fetch User Players
     Given path 'team/cricket/players'
     When method GET
     Then status 200
-    And print response
-    And print responseStatus
+    * print response
+    * print responseStatus
 
   Scenario: Create a Player
     * def requestBody =
@@ -38,9 +40,9 @@ Feature: Scorecraze API
     Then status 200
     Then print response
 
-  @tag1
+@Reg
   Scenario: Fetch Upcoming matches
-    * def requestBody = read('requestData.json')
+    * def requestBody = read('classpath:payloads/Login.json')
     Given path 'fixture/cricket'
     And request requestBody
     And set requestBody.filter.fixtureStatus = "Upcoming"
@@ -48,9 +50,9 @@ Feature: Scorecraze API
     Then status 200
     Then print response
 
-  @tag1
+@Reg
   Scenario: Fetch Completed matches
-    * def requestBody = read('requestData.json')
+    * def requestBody = read('classpath:payloads/Login.json')
     Given path 'fixture/cricket'
     And request requestBody
     And set requestBody.filter.fixtureStatus = "Completed"
@@ -58,9 +60,9 @@ Feature: Scorecraze API
     Then status 200
     Then print response
 
-  @tag1
+@Reg
   Scenario: Fetch Live matches
-    * def requestBody = read('requestData.json')
+    * def requestBody = read('classpath:payloads/Login.json')
     Given path 'fixture/cricket'
     And request requestBody
     And method POST

@@ -26,7 +26,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
 
-    <title>features.withLogin.Sample</title>
+    <title>features.withLogin.Login</title>
   </head>
   <body>
     <div id="root-container">
@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-pass" class="bg-success">5</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,28 +49,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-10-03 12:44:07 PM</div>
+    <div>2025-10-04 10:25:38 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:9]"><span>[1:9]</span> <span>Fetch User Teams</span></a>
+            <a href="#[1:10]"><span>[1:10]</span> <span>Fetch User Teams</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:16]"><span>[2:16]</span> <span>Fetch User Players</span></a>
+            <a href="#[2:18]"><span>[2:18]</span> <span>Fetch User Players</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:23]"><span>[3:23]</span> <span>Create a Player</span></a>
+            <a href="#[4:44]"><span>[4:44]</span> <span>Fetch Upcoming matches</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[4:42]"><span>[4:42]</span> <span>Fetch Upcoming matches</span></a>
+            <a href="#[5:54]"><span>[5:54]</span> <span>Fetch Completed matches</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[5:52]"><span>[5:52]</span> <span>Fetch Completed matches</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[6:62]"><span>[6:62]</span> <span>Fetch Live matches</span></a>
+            <a href="#[6:64]"><span>[6:64]</span> <span>Fetch Live matches</span></a>
           </div>
         </div>
       </div>
@@ -79,34 +76,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">features/withLogin/Sample.feature</span><span class="feature-label">|</span>
+          <span class="feature-path">features/withLogin/Login.feature</span><span class="feature-label">|</span>
           <span class="feature-name">Scorecraze API</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:9]">
+          <div class="scenario-heading" id="[1:10]">
             <div class="heading-container">
               <div class="scenario-tags">
-                
+                <a class="badge badge-primary" href="karate-tags.html">Reg</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:9]</span>
+                Scenario: <span>[1:10]</span>
                 <span class="scenario-name">Fetch User Teams</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>664</span>
+              <span>ms:</span>&nbsp;<span>1823</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:9]bg">
+            <div class="step-container" id="[1:10]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -117,34 +114,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">50</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:9]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -162,20 +131,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -190,20 +159,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;team/cricket&#39;</span>
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -228,10 +197,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>Given</span>&nbsp;<span>path &#39;team/cricket&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">551</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -240,7 +209,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.11">12:44:06.587 request:
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1797</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">22:25:37.052 request:
 1 &gt; GET https://dev.scorecraze.app/api/team/cricket
 1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
 1 &gt; Content-Type: application/json
@@ -250,10 +247,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-12:44:06.793 response time in milliseconds: 203
+22:25:38.346 response time in milliseconds: 1278
 1 &lt; 200
 1 &lt; Server: nginx/1.22.1
-1 &lt; Date: Fri, 03 Oct 2025 07:14:09 GMT
+1 &lt; Date: Sat, 04 Oct 2025 16:55:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 2290
 1 &lt; Connection: keep-alive
@@ -274,8 +271,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -302,14 +299,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">17</div>
   </div>
 
    
@@ -318,7 +315,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.13">12:44:06.877 [print] {
+  <div class="preformatted" data-parent="0.14">22:25:38.370 [print] {
   &quot;message&quot;: &quot;Cricket Teams retrieved successfully&quot;,
   &quot;data&quot;: [
     {
@@ -449,14 +446,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>print responseStatus</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -465,7 +462,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.14">12:44:06.882 [print] 200 
+  <div class="preformatted" data-parent="0.15">22:25:38.374 [print] 200 
 </div>   
 
   
@@ -474,29 +471,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:16]">
+          <div class="scenario-heading" id="[2:18]">
             <div class="heading-container">
               <div class="scenario-tags">
-                
+                <a class="badge badge-primary" href="karate-tags.html">Reg</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:16]</span>
+                Scenario: <span>[2:18]</span>
                 <span class="scenario-name">Fetch User Players</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>97</span>
+              <span>ms:</span>&nbsp;<span>1809</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:16]bg">
+            <div class="step-container" id="[2:18]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:16]bg"><div>
+          <div data-parent="[2:18]bg"><div>
   
 
   
@@ -509,7 +506,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -524,7 +521,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2:16]bg"><div>
+          <div data-parent="[2:18]bg"><div>
   
 
   
@@ -537,7 +534,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -552,7 +549,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2:16]bg"><div>
+          <div data-parent="[2:18]bg"><div>
   
 
   
@@ -565,7 +562,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -575,84 +572,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
      
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;team/cricket/players&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
-      </div>
-    </div>
-    <div class="time-cell passed">93</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.18">12:44:06.893 request:
-1 &gt; GET https://dev.scorecraze.app/api/team/cricket/players
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
-1 &gt; Content-Type: application/json
-1 &gt; Host: dev.scorecraze.app
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-12:44:06.983 response time in milliseconds: 87
-1 &lt; 200
-1 &lt; Server: nginx/1.22.1
-1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 3559
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; ETag: W/&quot;de7-eHUSiPLQQuUFknPEUZF8dCQqyro&quot;
-{&quot;data&quot;:[{&quot;_id&quot;:&quot;68a47090df63f97065478346&quot;,&quot;playerName&quot;:&quot;Tamilarasan&quot;,&quot;playerDisplayName&quot;:&quot;Tamil&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerAPIId&quot;:1755607184602,&quot;mobileNumber&quot;:&quot;9404640485&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607709392-1755607184602&quot;},{&quot;_id&quot;:&quot;68a47083df63f97065478342&quot;,&quot;playerName&quot;:&quot;Karthik Dhoni&quot;,&quot;playerDisplayName&quot;:&quot;KD&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;wk&quot;,&quot;playerAPIId&quot;:1755607171756,&quot;mobileNumber&quot;:&quot;9404438105&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755608066364-1755607171756&quot;},{&quot;_id&quot;:&quot;68a47076df63f9706547833e&quot;,&quot;playerName&quot;:&quot;Vignesh Gethu&quot;,&quot;playerDisplayName&quot;:&quot;Vicky&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bat&quot;,&quot;playerAPIId&quot;:1755607158883,&quot;mobileNumber&quot;:&quot;9543138205&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607749324-1755607158883&quot;},{&quot;_id&quot;:&quot;68a46fe1df63f9706547831c&quot;,&quot;playerName&quot;:&quot;Sudharsanan&quot;,&quot;playerDisplayName&quot;:&quot;Sn&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607766883-1755607010505&quot;,&quot;playerAPIId&quot;:1755607010505,&quot;mobileNumber&quot;:&quot;9054355088&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46fe1df63f9706547831b&quot;,&quot;playerName&quot;:&quot;Harish&quot;,&quot;playerDisplayName&quot;:&quot;Hh&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607789469-1755607009505&quot;,&quot;playerAPIId&quot;:1755607009505,&quot;mobileNumber&quot;:&quot;9055880085&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46fb2df63f97065478316&quot;,&quot;playerName&quot;:&quot;Seran Baskaran&quot;,&quot;playerDisplayName&quot;:&quot;Seran&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerAPIId&quot;:1755606962052,&quot;mobileNumber&quot;:&quot;9351040454&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607890039-1755606962052&quot;},{&quot;_id&quot;:&quot;68a46f92df63f97065478311&quot;,&quot;playerName&quot;:&quot;Vinoth Kanna&quot;,&quot;playerDisplayName&quot;:&quot;VK&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerAPIId&quot;:1755606930551,&quot;mobileNumber&quot;:&quot;9015124040&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607801627-1755606930551&quot;},{&quot;_id&quot;:&quot;68a46f6edf63f9706547830d&quot;,&quot;playerName&quot;:&quot;Anwin Paulji&quot;,&quot;playerDisplayName&quot;:&quot;Anwin&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerAPIId&quot;:1755606894500,&quot;mobileNumber&quot;:&quot;9075453148&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607827941-1755606894500&quot;},{&quot;_id&quot;:&quot;68a2e6e09f04af09b16428e0&quot;,&quot;playerName&quot;:&quot;Bharathi&quot;,&quot;playerDisplayName&quot;:&quot;Bharathi&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607843778-1755506400602&quot;,&quot;playerAPIId&quot;:1755506400602,&quot;mobileNumber&quot;:&quot;8697548123&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a2e6c59f04af09b16428dc&quot;,&quot;playerName&quot;:&quot;Logesh&quot;,&quot;playerDisplayName&quot;:&quot;Logi&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607904697-1755506373062&quot;,&quot;playerAPIId&quot;:1755506373062,&quot;mobileNumber&quot;:&quot;9467853120&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0}],&quot;status&quot;:200,&quot;message&quot;:&quot;Players fetched successfully&quot;}
-
-</div>   
 
   
 
@@ -666,6 +585,84 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.19">
       <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;team/cricket/players&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1729</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">22:25:37.053 request:
+1 &gt; GET https://dev.scorecraze.app/api/team/cricket/players
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
+1 &gt; Content-Type: application/json
+1 &gt; Host: dev.scorecraze.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:25:38.280 response time in milliseconds: 1223
+1 &lt; 200
+1 &lt; Server: nginx/1.22.1
+1 &lt; Date: Sat, 04 Oct 2025 16:55:37 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 3573
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;df5-RYBwTt13zt7/D+SMzfAVXon03Zw&quot;
+{&quot;data&quot;:[{&quot;_id&quot;:&quot;68df77c27e0ef53ac0067c7f&quot;,&quot;playerName&quot;:&quot;Dummy&quot;,&quot;playerDisplayName&quot;:&quot;Dum&quot;,&quot;player_value&quot;:{&quot;Test&quot;:0,&quot;ODI&quot;:0,&quot;T20&quot;:0},&quot;player_type&quot;:&quot;wk&quot;,&quot;playerImg&quot;:&quot;&quot;,&quot;playerAPIId&quot;:1759475650286,&quot;mobileNumber&quot;:&quot;9174963102&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;createdAt&quot;:&quot;2025-10-03T07:14:10.290Z&quot;,&quot;updatedAt&quot;:&quot;2025-10-03T07:14:10.290Z&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a47090df63f97065478346&quot;,&quot;playerName&quot;:&quot;Tamilarasan&quot;,&quot;playerDisplayName&quot;:&quot;Tamil&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerAPIId&quot;:1755607184602,&quot;mobileNumber&quot;:&quot;9404640485&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607709392-1755607184602&quot;},{&quot;_id&quot;:&quot;68a47083df63f97065478342&quot;,&quot;playerName&quot;:&quot;Karthik Dhoni&quot;,&quot;playerDisplayName&quot;:&quot;KD&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;wk&quot;,&quot;playerAPIId&quot;:1755607171756,&quot;mobileNumber&quot;:&quot;9404438105&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755608066364-1755607171756&quot;},{&quot;_id&quot;:&quot;68a47076df63f9706547833e&quot;,&quot;playerName&quot;:&quot;Vignesh Gethu&quot;,&quot;playerDisplayName&quot;:&quot;Vicky&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bat&quot;,&quot;playerAPIId&quot;:1755607158883,&quot;mobileNumber&quot;:&quot;9543138205&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607749324-1755607158883&quot;},{&quot;_id&quot;:&quot;68a46fe1df63f9706547831c&quot;,&quot;playerName&quot;:&quot;Sudharsanan&quot;,&quot;playerDisplayName&quot;:&quot;Sn&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607766883-1755607010505&quot;,&quot;playerAPIId&quot;:1755607010505,&quot;mobileNumber&quot;:&quot;9054355088&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46fe1df63f9706547831b&quot;,&quot;playerName&quot;:&quot;Harish&quot;,&quot;playerDisplayName&quot;:&quot;Hh&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607789469-1755607009505&quot;,&quot;playerAPIId&quot;:1755607009505,&quot;mobileNumber&quot;:&quot;9055880085&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68a46fb2df63f97065478316&quot;,&quot;playerName&quot;:&quot;Seran Baskaran&quot;,&quot;playerDisplayName&quot;:&quot;Seran&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerAPIId&quot;:1755606962052,&quot;mobileNumber&quot;:&quot;9351040454&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607890039-1755606962052&quot;},{&quot;_id&quot;:&quot;68a46f92df63f97065478311&quot;,&quot;playerName&quot;:&quot;Vinoth Kanna&quot;,&quot;playerDisplayName&quot;:&quot;VK&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerAPIId&quot;:1755606930551,&quot;mobileNumber&quot;:&quot;9015124040&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607801627-1755606930551&quot;},{&quot;_id&quot;:&quot;68a46f6edf63f9706547830d&quot;,&quot;playerName&quot;:&quot;Anwin Paulji&quot;,&quot;playerDisplayName&quot;:&quot;Anwin&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;ar&quot;,&quot;playerAPIId&quot;:1755606894500,&quot;mobileNumber&quot;:&quot;9075453148&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607827941-1755606894500&quot;},{&quot;_id&quot;:&quot;68a2e6e09f04af09b16428e0&quot;,&quot;playerName&quot;:&quot;Bharathi&quot;,&quot;playerDisplayName&quot;:&quot;Bharathi&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;player_type&quot;:&quot;bowl&quot;,&quot;playerImg&quot;:&quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607843778-1755506400602&quot;,&quot;playerAPIId&quot;:1755506400602,&quot;mobileNumber&quot;:&quot;8697548123&quot;,&quot;isVerified&quot;:false,&quot;createdBy&quot;:&quot;6892f46cb250a4f6b1bedce7&quot;,&quot;__v&quot;:0}],&quot;status&quot;:200,&quot;message&quot;:&quot;Players fetched successfully&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -692,14 +689,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref passed">20</div>
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print response</span>
+        <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">65</div>
   </div>
 
    
@@ -708,8 +705,27 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.20">12:44:06.986 [print] {
+  <div class="preformatted" data-parent="0.22">22:25:38.347 [print] {
   &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;68df77c27e0ef53ac0067c7f&quot;,
+      &quot;playerName&quot;: &quot;Dummy&quot;,
+      &quot;playerDisplayName&quot;: &quot;Dum&quot;,
+      &quot;player_value&quot;: {
+        &quot;Test&quot;: 0,
+        &quot;ODI&quot;: 0,
+        &quot;T20&quot;: 0
+      },
+      &quot;player_type&quot;: &quot;wk&quot;,
+      &quot;playerImg&quot;: &quot;&quot;,
+      &quot;playerAPIId&quot;: 1759475650286,
+      &quot;mobileNumber&quot;: &quot;9174963102&quot;,
+      &quot;isVerified&quot;: false,
+      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
+      &quot;createdAt&quot;: &quot;2025-10-03T07:14:10.290Z&quot;,
+      &quot;updatedAt&quot;: &quot;2025-10-03T07:14:10.290Z&quot;,
+      &quot;__v&quot;: 0
+    },
     {
       &quot;_id&quot;: &quot;68a47090df63f97065478346&quot;,
       &quot;playerName&quot;: &quot;Tamilarasan&quot;,
@@ -826,19 +842,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       &quot;isVerified&quot;: false,
       &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
       &quot;__v&quot;: 0
-    },
-    {
-      &quot;_id&quot;: &quot;68a2e6c59f04af09b16428dc&quot;,
-      &quot;playerName&quot;: &quot;Logesh&quot;,
-      &quot;playerDisplayName&quot;: &quot;Logi&quot;,
-      &quot;player_value&quot;: &quot;0&quot;,
-      &quot;player_type&quot;: &quot;ar&quot;,
-      &quot;playerImg&quot;: &quot;https://scorecraze-production.s3.ap-south-1.amazonaws.com/1755607904697-1755506373062&quot;,
-      &quot;playerAPIId&quot;: 1755506373062,
-      &quot;mobileNumber&quot;: &quot;9467853120&quot;,
-      &quot;isVerified&quot;: false,
-      &quot;createdBy&quot;: &quot;6892f46cb250a4f6b1bedce7&quot;,
-      &quot;__v&quot;: 0
     }
   ],
   &quot;status&quot;: 200,
@@ -857,183 +860,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print responseStatus</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.21">12:44:06.988 [print] 200 
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:23]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:23]</span>
-                <span class="scenario-name">Create a Player</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>176</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:23]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[3:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[3:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.24">
-      <div class="step-ref passed">24</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def requestBody =</span>
-      </div>
-    </div>
-    <div class="time-cell passed">16</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.24">{
-  &quot;playerImg&quot;: &quot;&quot;,
-  &quot;playerName&quot;: &quot;Dummy&quot;,
-  &quot;playerDisplayName&quot;: &quot;Dum&quot;,
-  &quot;player_value&quot;: &quot;0&quot;,
-  &quot;mobileNumber&quot;: &quot;9174963102&quot;,
-  &quot;player_type&quot;: &quot;wk&quot;
-}</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;team/cricket/addplayer&#39;</span>
+        <span>*</span>&nbsp;<span>print responseStatus</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -1045,23 +876,48 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.23">22:25:38.349 [print] 200 
+</div>   
 
   
 
 </div>
 </div>
-          <div><div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:44]</span>
+                <span class="scenario-name">Fetch Upcoming matches</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1843</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:44]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request requestBody</span>
+        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">8</div>
@@ -1079,171 +935,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">147</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.37">12:44:07.075 request:
-1 &gt; POST https://dev.scorecraze.app/api/team/cricket/addplayer
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 129
-1 &gt; Host: dev.scorecraze.app
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;playerImg&quot;:&quot;&quot;,&quot;playerName&quot;:&quot;Dummy&quot;,&quot;playerDisplayName&quot;:&quot;Dum&quot;,&quot;player_value&quot;:&quot;0&quot;,&quot;mobileNumber&quot;:&quot;9174963102&quot;,&quot;player_type&quot;:&quot;wk&quot;}
-
-12:44:07.169 response time in milliseconds: 93
-1 &lt; 200
-1 &lt; Server: nginx/1.22.1
-1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 60
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; ETag: W/&quot;3c-5ceYLomTmqPBWCBhENeDjwoPIhg&quot;
-{&quot;status&quot;:200,&quot;message&quot;:&quot;Team Player Uploaded Successfully&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref passed">38</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.39">
-      <div class="step-ref passed">39</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.39">12:44:07.174 [print] {
-  &quot;status&quot;: 200,
-  &quot;message&quot;: &quot;Team Player Uploaded Successfully&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[4:42]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">tag1</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[4:42]</span>
-                <span class="scenario-name">Fetch Upcoming matches</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>103</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[4:42]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[4:42]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[4:42]bg"><div>
+          <div data-parent="[4:44]bg"><div>
   
 
   
@@ -1271,7 +963,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[4:42]bg"><div>
+          <div data-parent="[4:44]bg"><div>
   
 
   
@@ -1284,63 +976,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.43">
-      <div class="step-ref passed">43</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requestData.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">7</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.44">
-      <div class="step-ref passed">44</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1365,10 +1001,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">45</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request requestBody</span>
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;classpath:payloads/Login.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">195</div>
   </div>
 
    
@@ -1393,10 +1029,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">46</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>set requestBody.filter.fixtureStatus = &quot;Upcoming&quot;</span>
+        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1421,10 +1057,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">47</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>method POST</span>
+        <span>And</span>&nbsp;<span>request requestBody</span>
       </div>
     </div>
-    <div class="time-cell passed">90</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -1433,7 +1069,63 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.47">12:44:07.197 request:
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set requestBody.filter.fixtureStatus = &quot;Upcoming&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1607</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">22:25:37.052 request:
 1 &gt; POST https://dev.scorecraze.app/api/fixture/cricket
 1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1444,10 +1136,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Upcoming&quot;}}
 
-12:44:07.284 response time in milliseconds: 86
+22:25:38.354 response time in milliseconds: 1280
 1 &lt; 200
 1 &lt; Server: nginx/1.22.1
-1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Date: Sat, 04 Oct 2025 16:55:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 1005
 1 &lt; Connection: keep-alive
@@ -1468,8 +1160,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.48">
-      <div class="step-ref passed">48</div>
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -1496,14 +1188,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -1512,7 +1204,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.49">12:44:07.287 [print] {
+  <div class="preformatted" data-parent="0.51">22:25:38.373 [print] {
   &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
   &quot;data&quot;: [
     {
@@ -1568,29 +1260,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[5:52]">
+          <div class="scenario-heading" id="[5:54]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">tag1</a>
+                <a class="badge badge-primary" href="karate-tags.html">Reg</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[5:52]</span>
+                Scenario: <span>[5:54]</span>
                 <span class="scenario-name">Fetch Completed matches</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>110</span>
+              <span>ms:</span>&nbsp;<span>1846</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[5:52]bg">
+            <div class="step-container" id="[5:54]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[5:52]bg"><div>
+          <div data-parent="[5:54]bg"><div>
   
 
   
@@ -1601,90 +1293,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[5:52]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[5:52]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.53">
-      <div class="step-ref passed">53</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requestData.json&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">2</div>
@@ -1702,14 +1310,98 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
+          <div data-parent="[5:54]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:54]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
           <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;classpath:payloads/Login.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">176</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
@@ -1736,14 +1428,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.55">
-      <div class="step-ref passed">55</div>
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request requestBody</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">32</div>
   </div>
 
    
@@ -1764,14 +1456,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref passed">56</div>
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>set requestBody.filter.fixtureStatus = &quot;Completed&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -1792,14 +1484,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">103</div>
+    <div class="time-cell passed">1612</div>
   </div>
 
    
@@ -1808,7 +1500,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.57">12:44:07.299 request:
+  <div class="preformatted" data-parent="0.59">22:25:37.052 request:
 1 &gt; POST https://dev.scorecraze.app/api/fixture/cricket
 1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1819,10 +1511,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Completed&quot;}}
 
-12:44:07.397 response time in milliseconds: 97
+22:25:38.333 response time in milliseconds: 1266
 1 &lt; 200
 1 &lt; Server: nginx/1.22.1
-1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Date: Sat, 04 Oct 2025 16:55:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 9174
 1 &lt; Connection: keep-alive
@@ -1843,8 +1535,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref passed">58</div>
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -1871,14 +1563,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.59">
-      <div class="step-ref passed">59</div>
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -1887,7 +1579,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.59">12:44:07.403 [print] {
+  <div class="preformatted" data-parent="0.61">22:25:38.378 [print] {
   &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
   &quot;data&quot;: [
     {
@@ -2295,29 +1987,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[6:62]">
+          <div class="scenario-heading" id="[6:64]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">tag1</a>
+                <a class="badge badge-primary" href="karate-tags.html">Reg</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[6:62]</span>
+                Scenario: <span>[6:64]</span>
                 <span class="scenario-name">Fetch Live matches</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>87</span>
+              <span>ms:</span>&nbsp;<span>1783</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[6:62]bg">
+            <div class="step-container" id="[6:64]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[6:62]bg"><div>
+          <div data-parent="[6:64]bg"><div>
   
 
   
@@ -2330,7 +2022,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://dev.scorecraze.app/api/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2345,7 +2037,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[6:62]bg"><div>
+          <div data-parent="[6:64]bg"><div>
   
 
   
@@ -2358,7 +2050,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -2373,7 +2065,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[6:62]bg"><div>
+          <div data-parent="[6:64]bg"><div>
   
 
   
@@ -2386,63 +2078,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.63">
-      <div class="step-ref passed">63</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requestData.json&#39;)</span>
-      </div>
-    </div>
     <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.64">
-      <div class="step-ref passed">64</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2467,10 +2103,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">65</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request requestBody</span>
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;classpath:payloads/Login.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">151</div>
   </div>
 
    
@@ -2495,10 +2131,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">66</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>method POST</span>
+        <span>Given</span>&nbsp;<span>path &#39;fixture/cricket&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">84</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -2507,7 +2143,63 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.66">12:44:07.411 request:
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1534</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">22:25:37.053 request:
 1 &gt; POST https://dev.scorecraze.app/api/fixture/cricket
 1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyZjQ2Y2IyNTBhNGY2YjFiZWRjZTciLCJ1c2VyTmFtZSI6ImNoYSIsImVtYWlsIjoiY2hhbmRyb29zMzBAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOjAsInJvbGUiOiJBZG1pbiIsImlzVmVyaWZpZWQiOnRydWUsIl9fdiI6MCwidXBkYXRlZEF0IjoiMjAyNS0wOS0yMVQwOToyODoxNS45NjlaIiwiaXNBY3RpdmUiOnRydWUsImxhc3RMb2dpbkF0IjoiMjAyNS0wOS0wNFQxMzowMToxOS44MzRaIiwiaWF0IjoxNzU4NDQ2OTE5LCJleHAiOjE3NjExMjUzMTl9.r8-gS-LRd1RhZcaXPeCguep4NatcNJuQI8Et_qlgTII
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2518,10 +2210,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;filter&quot;:{&quot;seriesAPIId&quot;:0,&quot;fixtureStatus&quot;:&quot;Live&quot;}}
 
-12:44:07.493 response time in milliseconds: 80
+22:25:38.281 response time in milliseconds: 1227
 1 &lt; 200
 1 &lt; Server: nginx/1.22.1
-1 &lt; Date: Fri, 03 Oct 2025 07:14:10 GMT
+1 &lt; Date: Sat, 04 Oct 2025 16:55:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 1031
 1 &lt; Connection: keep-alive
@@ -2542,8 +2234,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.67">
-      <div class="step-ref passed">67</div>
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -2570,14 +2262,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.68">
-      <div class="step-ref passed">68</div>
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -2586,7 +2278,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.68">12:44:07.496 [print] {
+  <div class="preformatted" data-parent="0.70">22:25:38.349 [print] {
   &quot;message&quot;: &quot;Fixtures Listed successfully&quot;,
   &quot;data&quot;: [
     {
